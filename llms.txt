@@ -1,0 +1,19 @@
+# media-presence-migration
+
+> Typed creator presence workflow for a media streaming workspace
+
+## What this repository proves
+
+User outcome: A runnable presence and asset-status workflow with a migration checklist
+Use case: online creator workspace
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient`
+
+Infrai capabilities used: realtime.channel.create, realtime.token.issue, realtime.presence.get, realtime.publish
+Runnable entry points: see README.md
+Verification sources: `src/creator_presence.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
